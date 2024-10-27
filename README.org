@@ -1,0 +1,24 @@
+* Dotfiles and OS configurations
+
+** Emacs
+*** Setup dependencies
+#+begin_src elisp
+  (nerd-icons-install-fonts)
+#+end_src
+
+#+begin_src bash
+  ln -fs ~/dotfiles/emacs/init.el ~/.emacs
+  systemctl --user enable --now emacs
+#+end_src
+
+** Shell
+*** Setup dependencies
+Run manualy:
+#+begin_src bash
+  sudo pacman -S starship
+#+end_src
+
+Run with Babel:
+#+begin_src bash
+  ln -fs ~/dotfiles/bashrc.sh ~/.bashrc
+#+end_src
