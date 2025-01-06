@@ -5,8 +5,8 @@ continuation_prompt = "[](bright-black) "
 add_newline = false
 
 [character]
-        success_symbol = "[](blue) [](green)"
-        error_symbol = "[](red) [](green)"
+        success_symbol = "[󰻀](blue) [](green)"
+        error_symbol = "[󰻀](red) [](green)"
 
 [line_break]
 disabled = false

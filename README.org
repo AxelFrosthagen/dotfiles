@@ -1,16 +1,4 @@
 * Dotfiles and OS configurations
-
-** Emacs
-*** Setup dependencies
-#+begin_src elisp
-  (nerd-icons-install-fonts)
-#+end_src
-
-#+begin_src bash
-  ln -fs ~/dotfiles/emacs/init.el ~/.emacs
-  systemctl --user enable --now emacs
-#+end_src
-
 ** Shell
 *** Setup dependencies
 Run manualy:
@@ -22,3 +10,46 @@ Run with Babel:
 #+begin_src bash
   ln -fs ~/dotfiles/bashrc.sh ~/.bashrc
 #+end_src
+
+** Doom Emacs
+*** Setup dependencies
+https://github.com/doomemacs/doomemacs/blob/master/docs/getting_started.org
+
+*First install the latest official Emacs release through your package manager!*
+
+Clone and install Doom Emacs:
+#+begin_src bash
+  git clone --depth 1 https://github.com/doomemacs/doomemacs ~/.config/emacs
+  ~/.config/emacs/bin/doom install
+#+end_src
+
+Install own configurations:
+#+begin_src bash
+  ln -fs ~/dotfiles/emacs/init.el ~/.init/doom/conifg.el
+  ln -fs ~/dotfiles/emacs/config.el ~/.config/doom/conifg.el
+  ln -fs ~/dotfiles/emacs/packages.el ~/.packages/doom/conifg.el
+#+end_src
+** Emacs (old)
+*** Setup dependencies
+
+#+begin_src elisp
+  (nerd-icons-install-fonts)
+  (treesit-install-language-grammar-all)
+#+end_src
+
+
+#+begin_src bash
+  ln -fs ~/dotfiles/emacs/init.el ~/.emacs
+  systemctl --user enable --now emacs
+#+end_src
+
+** Language
+*** Go
+*First install GoLang*
+#+begin_src bash
+  go install golang.org/x/tools/gopls@latest
+  go install golang.org/x/tools/cmd/goimports@latest
+  go install github.com/go-delve/delve/cmd/dlv@latest
+#+end_src
+
+* TODO: Install all nerd fonts
