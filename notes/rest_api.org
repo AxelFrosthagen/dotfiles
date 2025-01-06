@@ -1,0 +1,74 @@
+#+title: Testing Document
+* NEW USER
+#+begin_src restclient
+POST http://localhost:1323/user?name=Testare&password=qwerty
+#+end_src
+
+#+RESULTS:
+#+BEGIN_SRC js
+// POST http://localhost:1323/user?name=Testare&password=qwerty
+// HTTP/1.1 200 OK
+// Date: Mon, 06 Jan 2025 11:30:49 GMT
+// Content-Length: 0
+// Request duration: 0.133360s
+#+END_SRC
+
+
+
+#+begin_src restclient
+POST http://localhost:1323/user?name=TestareIgen
+#+end_src
+
+#+RESULTS:
+#+BEGIN_SRC js
+// POST http://localhost:1323/user?name=TestareIgen
+// HTTP/1.1 200 OK
+// Date: Sun, 29 Dec 2024 17:52:59 GMT
+// Content-Length: 0
+// Request duration: 0.021230s
+#+END_SRC
+
+* GET HOME
+
+#+begin_src restclient
+GET http://localhost:1323
+#+end_src
+
+#+RESULTS:
+#+begin_example
+,#+BEGIN_SRC html
+<html><head><title>Lang-App | Homepage</title><style>
+      body {
+      margin: 0;
+      background-color: black;
+      color: wheat;
+      }
+
+      .nav {
+      list-style-type: none;
+      margin: 0;
+      padding: 25px;
+      width: 20%;
+      background-color: #333333;
+      height: 100%; /* Full height */
+      position: fixed; /* Make it stick, even on scroll */
+      overflow: auto; /* Enable scrolling if the sidenav has too much content */
+      }
+
+      .container {
+      margin-left: 25%;
+      padding: 25px;
+      }
+
+      a {
+      color: white;
+      }
+    </style></head><body><ul class="nav"><li><a href="/">Home</a></li><li><a href="/news">News</a></li><li><a href="/contact">Contact</a></li><li><a href="/about">About</a></li></ul><div class="container"><div>Hello World!</div></div></body></html>
+<!-- GET http://localhost:1323 -->
+<!-- HTTP/1.1 200 OK -->
+<!-- Content-Type: text/html; charset=UTF-8 -->
+<!-- Date: Tue, 17 Dec 2024 19:34:41 GMT -->
+<!-- Content-Length: 821 -->
+<!-- Request duration: 0.142819s -->
+,#+END_SRC
+#+end_example
