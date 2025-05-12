@@ -11,6 +11,11 @@ Run with Babel:
   ln -fs ~/dotfiles/bashrc.sh ~/.bashrc
 #+end_src
 
+** Tmux
+#+begin_src bash
+  ln -fs ~/dotfiles/tmux/ ~/.config/tmux
+#+end_src
+
 ** Nvim
 *** Install
 Dependencies:
