@@ -3,7 +3,7 @@
 *** Setup dependencies
 Run manualy:
 #+begin_src bash
-  sudo pacman -S starship
+  curl -sS https://starship.rs/install.sh | sh
 #+end_src
 
 Run with Babel:
@@ -25,9 +25,9 @@ Clone and install Doom Emacs:
 
 Install own configurations:
 #+begin_src bash
-  ln -fs ~/dotfiles/emacs/init.el ~/.init/doom/conifg.el
+  ln -fs ~/dotfiles/emacs/init.el ~/.config/doom/conifg.el
   ln -fs ~/dotfiles/emacs/config.el ~/.config/doom/conifg.el
-  ln -fs ~/dotfiles/emacs/packages.el ~/.packages/doom/conifg.el
+  ln -fs ~/dotfiles/emacs/packages.el ~/.config/doom/conifg.el
 #+end_src
 ** Emacs (old)
 *** Setup dependencies
@@ -42,6 +42,15 @@ Install own configurations:
   ln -fs ~/dotfiles/emacs/init.el ~/.emacs
   systemctl --user enable --now emacs
 #+end_src
+
+** Gnome
+*** Theming
+GTK Theme:
+https://github.com/Fausto-Korpsvart/Gruvbox-GTK-Theme/blob/master/README.md
+Install with installer in repo.
+
+Shell Theme:
+Look up the Gnome Shell Gruvbox theme from same creator.
 
 ** Language
 *** Go

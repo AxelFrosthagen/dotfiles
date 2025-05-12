@@ -28,6 +28,38 @@ POST http://localhost:1323/user?name=TestareIgen
 // Request duration: 0.021230s
 #+END_SRC
 
+* NEW BOOK
+
+#+begin_src restclient
+POST http://localhost:1323/book
+Content-Type: application/json
+{
+    "title" : "first book",
+    "author" : "Jan",
+    "released" : "igår"
+}
+#+end_src
+
+#+begin_src restclient
+POST http://localhost:1323/book
+Content-Type: application/json
+{
+    "title" : "seccond book",
+    "author" : "Jan",
+    "released" : "idag"
+}
+#+end_src
+
+#+RESULTS:
+#+BEGIN_SRC js
+// POST http://localhost:1323/book
+// HTTP/1.1 200 OK
+// Date: Mon, 03 Feb 2025 19:16:52 GMT
+// Content-Length: 0
+// Request duration: 0.031653s
+#+END_SRC
+
+
 * GET HOME
 
 #+begin_src restclient
