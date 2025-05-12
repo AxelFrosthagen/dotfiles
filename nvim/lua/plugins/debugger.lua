@@ -1,0 +1,3 @@
+-- [[ Debugger support ]]
+-- NOTE: this is not yet impelented. For a good start at this copy from Nvim Kickstart
+-- https://github.com/nvim-lua/kickstart.nvim/blob/master/lua/kickstart/plugins/debug.lua

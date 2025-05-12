@@ -11,8 +11,21 @@ Run with Babel:
   ln -fs ~/dotfiles/bashrc.sh ~/.bashrc
 #+end_src
 
+** Nvim
+*** Install
+Dependencies:
+- nvim
+- fzf
+- rgrep
+
+All thesse config files should be placed in ~/.config/nvim/
+this can be done with:
+#+begin_src bash
+  ln -fs ~/dotfiles/nvim/ ~/.config/nvim
+#+end_src
+
 ** Doom Emacs
-*** Setup dependencies
+*** Setup Dependencies
 https://github.com/doomemacs/doomemacs/blob/master/docs/getting_started.org
 
 *First install the latest official Emacs release through your package manager!*
