@@ -26,7 +26,7 @@ require("lazy").setup({
 	-- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
 	"tpope/vim-sleuth", -- Detect tabstop and shiftwidth automatically
 
-	require("plugins.tmux-nvim"),
+	require("plugins.tmux-navigator"),
 	require("plugins.oil"),
 	require("plugins.gitsigns"),
 	require("plugins.which-key"),
@@ -38,6 +38,7 @@ require("lazy").setup({
 	require("plugins.mini-nvim"),
 	require("plugins.treesitter"),
 	require("plugins.neogit"),
+	require("plugins.render-markdown"),
 
 	-- Highlight todo, notes, etc in comments
 	{

@@ -19,6 +19,7 @@ return {
 			"vimdoc",
 			"go",
 			"templ",
+			"python",
 		},
 		-- Autoinstall languages that are not installed
 		auto_install = true,

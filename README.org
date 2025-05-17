@@ -22,6 +22,7 @@ Dependencies:
 - nvim
 - fzf
 - rgrep
+- nerd-font-icons
 
 All thesse config files should be placed in ~/.config/nvim/
 this can be done with:
