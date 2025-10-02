@@ -2,7 +2,6 @@
 
 # All modules and given setup in alfabetical order
 declare -A modules=(\
-    [test]="echo hello world" \
     [bashrc]="ln -fs ~/dotfiles/bashrc.sh ~/.bashrc" \
     [emacs]=emacs-setup \
     [ghostty]="ln -fs ~/dotfiles/ghostty/ ~/.config/" \
@@ -11,6 +10,7 @@ declare -A modules=(\
     [tmux]="ln -fs ~/dotfiles/tmux/ ~/.config/" \
 );
 
+# Special setup calls
 emacs-setup() {
   ln -fs ~/dotfiles/emacs/init.el ~/.config/doom/init.el;
   ln -fs ~/dotfiles/emacs/config.el ~/.config/doom/config.el;
@@ -23,10 +23,16 @@ hyprland-setup() {
     ln -fs ~/dotfiles/hyprland/wofi/ ~/.config/;
 }
 
-if [ -z $1 ]; then
+# Helper functions
+echo-help() {
     echo "Run with module to install config for";
     echo "    ./setup.sh ls";
     echo "    ./setup.sh nvim";
+}
+
+# Main program
+if [ -z $1 ]; then
+    echo-help
     exit 1;
 fi;
 
@@ -34,6 +40,11 @@ if [[ $1 == "ls" ]]; then
     for module in "${!modules[@]}"; do
         printf "%s\n" ${module};
     done;
+    exit 0;
+fi;
+
+if [[ $1 == "help" || $1 == "--help" || $1 == "-h" ]]; then
+    echo-help
     exit 0;
 fi;
 
