@@ -6,7 +6,7 @@
 # STARSHIP PS1
 #
 eval "$(starship init bash)"
-export STARSHIP_CONFIG=~/dotfiles/starship.toml
+export STARSHIP_CONFIG=~/dotfiles/bash/starship.toml
 
 #
 # PATHS

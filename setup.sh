@@ -8,7 +8,7 @@
 
 # All modules and given setup in alfabetical order
 declare -A modules=(\
-    [bashrc]="ln -fs ~/dotfiles/bashrc.sh ~/.bashrc" \
+    [bash]="ln -fs ~/dotfiles/bash/bashrc.sh ~/.bashrc" \
     [emacs]=emacs-setup \
     [ghostty]="ln -fs ~/dotfiles/ghostty/ ~/.config/" \
     [hyprland]=hyprland-setup \
