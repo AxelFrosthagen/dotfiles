@@ -4,6 +4,9 @@ To install configuration files for different programs/modules use `setup.sh`.
 
 ## Dependencies
 ### Hyprland
+> [!NOTE]
+> Hyprland is a bleeding edge WM on Wayland. This meens it will not work as well with stable release distros.
+> Some distros can work around this like Fedora with a [Copr repository](https://copr.fedorainfracloud.org/coprs/solopasha/hyprland).
 
 | Package | Info |
 | --- | --- |
