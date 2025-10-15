@@ -8,9 +8,10 @@
 
 # All modules and given setup in alfabetical order
 declare -A modules=(\
-    [bash]="ln -fs ~/dotfiles/bash/bashrc.sh ~/.bashrc" \
+    [bash]=bash-setup \
     [emacs]=emacs-setup \
     [ghostty]="ln -fs ~/dotfiles/ghostty/ ~/.config/" \
+    [golang]=golang-setup \
     [hyprland]=hyprland-setup \
     [nvim]="ln -fs ~/dotfiles/nvim/ ~/.config/" \
     [tmux]="ln -fs ~/dotfiles/tmux/ ~/.config/" \
@@ -19,11 +20,21 @@ declare -A modules=(\
 ###########################
 ### Special setup calls ###
 ###########################
+bash-setup() {
+    curl -sS https://starship.rs/install.sh | sh;
+    ln -fs ~/dotfiles/bash/bashrc.sh ~/.bashrc;
+}
 
 emacs-setup() {
-  ln -fs ~/dotfiles/emacs/init.el ~/.config/doom/init.el;
-  ln -fs ~/dotfiles/emacs/config.el ~/.config/doom/config.el;
-  ln -fs ~/dotfiles/emacs/packages.el ~/.config/doom/packages.el;
+    ln -fs ~/dotfiles/emacs/init.el ~/.config/doom/init.el;
+    ln -fs ~/dotfiles/emacs/config.el ~/.config/doom/config.el;
+    ln -fs ~/dotfiles/emacs/packages.el ~/.config/doom/packages.el;
+}
+
+golang-setup() {
+    go install golang.org/x/tools/gopls@latest;
+    go install golang.org/x/tools/cmd/goimports@latest;
+    go install github.com/go-delve/delve/cmd/dlv@latest;
 }
 
 hyprland-setup() {
