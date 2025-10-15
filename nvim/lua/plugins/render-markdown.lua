@@ -9,5 +9,15 @@ return {
 		completions = {
 			blink = { enabled = true },
 		},
+		heading = {
+			backgrounds = {
+				"DiagnosticOk",
+				"DiffAdd",
+				"DiffChange",
+				"Visual",
+				"CursorColumn",
+				"DiagnosticOk",
+			},
+		},
 	},
 }
