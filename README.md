@@ -38,5 +38,6 @@ To install configuration files for different programs/modules use `setup.sh`.
 | golang | Go programming language | 
 
 ### Emacs
-This is an old module. No longer supported...
+> [!WARNING]
+> This is an old module. No longer guaranteed to work.
 
