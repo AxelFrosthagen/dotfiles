@@ -87,5 +87,13 @@
         "notifications"
       ]
     }
-  }
+  },
+  "bar.workspaces.applicationIconEmptyWorkspace": "󰇳",
+  "notifications.position": "top right",
+  "theme.notification.enableShadow": true,
+  "notifications.showActionsOnHover": false,
+  "notifications.timeout": 5000,
+  "theme.notification.opacity": 100,
+  "menus.clock.weather.key": "~/.config/weatherapi-key.json",
+  "menus.clock.weather.interval": 60000
 }
