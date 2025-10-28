@@ -43,8 +43,11 @@ golang-setup() {
 }
 
 hyprland-setup() {
+    rm -rf ~/.config/hypr;
     ln -fs ~/dotfiles/hyprland/hypr/ ~/.config/;
+    rm -rf ~/.config/hyprpanel;
     ln -fs ~/dotfiles/hyprland/hyprpanel/ ~/.config/;
+    rm -rf ~/.config/wofi;
     ln -fs ~/dotfiles/hyprland/wofi/ ~/.config/;
 }
 
