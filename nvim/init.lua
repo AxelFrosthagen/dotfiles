@@ -39,6 +39,7 @@ require("lazy").setup({
 	require("plugins.treesitter"),
 	require("plugins.neogit"),
 	require("plugins.render-markdown"),
+	require("plugins.render-image"),
 
 	-- Highlight todo, notes, etc in comments
 	{
