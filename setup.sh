@@ -10,7 +10,7 @@
 declare -A modules=(\
     [bash]=bash-setup \
     [emacs]=emacs-setup \
-    [ghostty]="ln -fs ~/dotfiles/ghostty/ ~/.config/" \
+    [ghostty]=ghostty-setup \
     [golang]=golang-setup \
     [hyprland]=hyprland-setup \
     [nvim]="ln -fs ~/dotfiles/nvim/ ~/.config/" \
@@ -29,6 +29,11 @@ emacs-setup() {
     ln -fs ~/dotfiles/emacs/init.el ~/.config/doom/init.el;
     ln -fs ~/dotfiles/emacs/config.el ~/.config/doom/config.el;
     ln -fs ~/dotfiles/emacs/packages.el ~/.config/doom/packages.el;
+}
+
+ghostty-setup() {
+    rm -rf ~/.config/ghostty
+    ln -fs ~/dotfiles/ghostty/ ~/.config/;
 }
 
 golang-setup() {
