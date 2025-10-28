@@ -8,6 +8,7 @@
 
 # All modules and given setup in alfabetical order
 declare -A modules=(\
+    [assets]="ln -fs ~/dotfiles/assets/ ~/Pictures/" \
     [bash]=bash-setup \
     [emacs]=emacs-setup \
     [ghostty]=ghostty-setup \

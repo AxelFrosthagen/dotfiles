@@ -3,7 +3,7 @@
     "/"
   ],
   "theme.bar.menus.monochrome": false,
-  "wallpaper.image": "/home/axel/Pictures/os/wallpapers/DSC00845.JPG",
+  "wallpaper.image": "/home/axel/dotfiles/assets/wallpapers/field.JPG",
   "theme.matugen": false,
   "theme.bar.menus.opacity": 100,
   "theme.bar.opacity": 0,
@@ -22,7 +22,7 @@
   "theme.bar.scaling": 90,
   "theme.notification.scaling": 90,
   "theme.bar.menus.menu.dashboard.scaling": 80,
-  "menus.dashboard.powermenu.avatar.image": "/home/axel/Pictures/os/profilepic.jpg",
+  "menus.dashboard.powermenu.avatar.image": "/home/axel/dotfiles/assets/profilepic.jpg",
   "menus.dashboard.shortcuts.left.shortcut4.command": "wofi -show drun",
   "menus.dashboard.directories.left.directory3.command": "bash -c \"xdg-open $HOME/proj/\"",
   "menus.clock.time.military": true,
