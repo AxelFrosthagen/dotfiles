@@ -41,5 +41,7 @@ vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper win
 -- vim.keymap.set("n", "<C-S-k>", "<C-w>K", { desc = "Move window to the upper" })
 
 vim.keymap.set("n", "-", "<CMD> Oil --float <CR>", { desc = "Open Parent Directory in Oil" })
-vim.keymap.set("n", "<leader>g", "<CMD> Neogit kind=floating cwd=%:p:h <CR>", { desc = "Open NeoGit client" })
-vim.keymap.set("n", "<leader>G", "<CMD> Neogit cwd=%:p:h <CR>")
+vim.keymap.set("n", "<leader>g", "<CMD> Neogit kind=floating cwd=%:p:h <CR>", { desc = "Open NeoGit" })
+
+-- Execute current file
+vim.keymap.set("n", "<leader>x", "<CMD> !sh % <CR>", { desc = "Execute current Bash file" })
