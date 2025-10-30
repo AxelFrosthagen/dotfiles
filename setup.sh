@@ -50,6 +50,9 @@ hyprland-setup() {
     ln -fs ~/dotfiles/hyprland/hyprpanel/ ~/.config/;
     rm -rf ~/.config/wofi;
     ln -fs ~/dotfiles/hyprland/wofi/ ~/.config/;
+
+    systemctl enable crond.service;
+    crontab -l 2> /dev/null | { cat; echo "* * * * * /home/axel/dotfiles/tools/wallpaper.sh"; } | crontab -
 }
 
 ########################

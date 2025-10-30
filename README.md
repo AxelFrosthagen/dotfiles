@@ -32,6 +32,13 @@ To install configuration files for different programs/modules use `setup.sh`.
 | hyprlock | Lockscreen |
 | swww | Wallpaper manager |
 | wofi | Launcher |
+| cronie |  Cron task scheduler |
+
+| Settings | Info |
+| --- | --- |
+| pavucontrol | Audio settings |
+| blueman | Bluetooth settings |
+
 
 > [!NOTE]
 > Reload hyprland config with `hyprctl reload`
