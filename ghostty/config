@@ -34,6 +34,8 @@
 # # part of the value. For example, this will have a value of "#123abc":
 # background = #123abc
 theme = GruvboxDarkHarder
+working-directory = home
+window-inherit-working-directory = false
 # background-opacity = 0.85
 # window-decoration = none
 # window-padding-x = 5
